@@ -3,7 +3,10 @@ import React, { useState } from "react";
 import ExportCard from "./ExportCard";
 import html2canvas from "html2canvas";
 
-function Card({ nome, foto, idade, github, linkedin }) {
+function Card(props) {
+  // Pode se chamar com props, porém para colocar o valor deve colocar props.nome
+  //function Card({ nome, foto, idade, github, linkedin }) {
+  //Forma de chamar os valores sem o props
   //Props é um objeto que é passado para dentro da função
   const [image, setImage] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -28,10 +31,10 @@ function Card({ nome, foto, idade, github, linkedin }) {
   return (
     <div id="cardPersonal">
       <p>
-        <img className="imgPessoal" src={foto} width="100px;"></img>
+        <img className="imgPessoal" src={props.foto} width="100px;"></img>
       </p>
-      <p>Nome: {nome}</p>
-      <p>Idade: {idade}</p>
+      <p>Nome: {props.nome}</p>
+      <p>Idade: {props.idade}</p>
       {image && (
         <ExportCard
           image={image}
@@ -40,10 +43,10 @@ function Card({ nome, foto, idade, github, linkedin }) {
         />
       )}
       <p>
-        GitHub: <a href={github}>GITHUB</a>
+        GitHub: <a href={props.github}>GITHUB</a>
       </p>
       <p>
-        Linkedin: <a href={linkedin}>LINKEDIN</a>
+        Linkedin: <a href={props.linkedin}>LINKEDIN</a>
       </p>
       <p>
         <button

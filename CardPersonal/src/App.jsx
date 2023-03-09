@@ -12,7 +12,6 @@ function App() {
         github="https://github.com/rico700/Curso-FullStack---Senai/"
         linkedin="https://www.linkedin.com/in/carlos-henrique-moreira-jr-a062aa42/"
       />
-      
     </div>
   );
 }
