@@ -2,6 +2,7 @@ import "./card.css";
 import React, { useState } from "react";
 import ExportCard from "./ExportCard";
 import html2canvas from "html2canvas";
+import "../../node_modules/boxicons/css/boxicons.min.css";
 
 function Card(props) {
   // Pode se chamar com props, porém para colocar o valor deve colocar props.nome
@@ -38,19 +39,26 @@ function Card(props) {
       {image && (
         <ExportCard
           image={image}
-          fileName={`card-${nome}.png`}
+          fileName={`card-${props.nome}.png`}
           onClose={() => setImage(null)}
         />
       )}
       <p>
-        GitHub: <a href={props.github}>GITHUB</a>
+        GitHub:{" "}
+        <a href={props.github} target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
       </p>
       <p>
-        Linkedin: <a href={props.linkedin}>LINKEDIN</a>
+        Linkedin:{" "}
+        <a href={props.linkedin} target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
       </p>
       <p>
         <button
           className="btnDownload"
+          id="btnDownload"
           onClick={() => {
             captureScreen();
             setShowConfirmation(true);
