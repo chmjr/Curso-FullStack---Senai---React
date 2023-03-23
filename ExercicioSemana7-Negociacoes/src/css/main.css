@@ -1,0 +1,59 @@
+body {
+  font-family: "Iceberg";
+  background-color: #dbf7f0;
+}
+h1 {
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.divForm {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  background-color: rgb(165, 165, 162);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.divTabela {
+  margin: 0 auto;
+  width: 500px;
+  height: 280px;
+  padding: 50px;
+  background-color: rgb(165, 165, 162);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888888;
+}
+.divForm button {
+  margin-left: 150px;
+  font-size: 14px;
+  background-color: #4f4f50;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+}
+.divForm p.btn {
+  margin-top: 30px;
+}
+.tabelaNegociacoes {
+  margin: 0 auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 800px;
+}
+.tabela-negociacoes-cabecalho {
+  background-color: #49664a;
+  color: white;
+  text-align: left;
+  width: 20px;
+  padding: 8px;
+}
+
+.tabelaNegociacoes td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
