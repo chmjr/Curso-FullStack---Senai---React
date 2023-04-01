@@ -21,6 +21,11 @@ export const appRouter = createBrowserRouter([
     children: [
       {
         //Rotas filhas são colocadas aqui dentro de um array
+        path: "",
+        element: <Home />,
+      },
+      {
+        //Rotas filhas são colocadas aqui dentro de um array
         path: "/home",
         element: <Home />,
       },

@@ -19,11 +19,7 @@ export const Formulario = () => {
       <h5>Adicionar tarefa</h5>
       <form className="input-group mb-3" onSubmit={handleSubmit}>
         <span className="input-group-text" id="campo-adicionar-tarefa">
-<<<<<<< HEAD
-          Descrição da tarefa:
-=======
-          Texto da tarefa:
->>>>>>> a0259aeba3510e950ac5ecd8059ce7f565d874d7
+          Descrição da tarefa
         </span>
         <input
           ref={textElementRef}
