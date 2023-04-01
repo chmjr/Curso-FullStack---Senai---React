@@ -1,0 +1,17 @@
+.barraTopo {
+  background-color: rgb(65, 3, 3);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list-group-item-custom {
+  background-color: #c6c6c6;
+  color: black;
+}
+
+.btn-outline-danger.bg-light:hover {
+  color: rgb(195, 0, 0);
+  font-weight: bolder;
+}
