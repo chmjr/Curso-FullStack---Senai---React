@@ -1,0 +1,49 @@
+.topo {
+  background: #4c4c4d;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 0 10px #4c4c4d;
+  font-family: "gothicMenu";
+}
+.topoLogo {
+  background: url(../images/logo.png) no-repeat;
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 0 0 0 20px;
+}
+.topoMenu {
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 40px;
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #4c4c4d;
+  color: #8acfd8;
+}
