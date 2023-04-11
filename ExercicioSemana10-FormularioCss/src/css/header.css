@@ -1,0 +1,22 @@
+.tituloTopo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Open Sans", sans-serif;
+}
+.subTituloTopo {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Open Sans", sans-serif;
+}
