@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { ContextoPag } from "../App";
 import { SCspanDados, SCspanAgrad, SCspanEnd } from "../style";
 import {
   BsPersonFillAdd,
@@ -8,32 +9,41 @@ import {
 import { Link } from "react-router-dom";
 
 function MenuFormulario() {
-  const [clicado, setClicado] = useState(0);
+  const { menuClicado, setMenuClicado } = useContext(ContextoPag);
 
   function handleClick(n) {
-    setClicado(n);
+    setMenuClicado(n);
   }
   return (
     <div className="menu-formulario">
       <nav>
         <ul>
           <li>
-            <Link to="/dadosPessoais">
-              <SCspanDados Clicado={clicado} onClick={() => handleClick(0)}>
+            <Link to={{ pathname: "/dadosPessoais", state: { indice: 0 } }}>
+              <SCspanDados
+                Clicado={menuClicado === 0}
+                onClick={() => handleClick(0)}
+              >
                 <BsPersonFillAdd /> Dados Pessoais
               </SCspanDados>
             </Link>
           </li>
           <li>
-            <Link to="/endereco" onClick={() => handleClick(1)}>
-              <SCspanEnd Clicado={clicado}>
+            <Link to={{ pathname: "/endereco", state: { indice: 1 } }}>
+              <SCspanEnd
+                Clicado={menuClicado === 1}
+                onClick={() => handleClick(1)}
+              >
                 <BsFillHouseAddFill /> Endereço
               </SCspanEnd>
             </Link>
           </li>
           <li>
-            <Link to="/agradecimento">
-              <SCspanAgrad Clicado={clicado} onClick={() => handleClick(2)}>
+            <Link to={{ pathname: "/agradecimento", state: { indice: 2 } }}>
+              <SCspanAgrad
+                Clicado={menuClicado === 2}
+                onClick={() => handleClick(2)}
+              >
                 <BsEmojiSmileFill /> Agradecimento
               </SCspanAgrad>
             </Link>

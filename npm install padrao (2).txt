@@ -1,1 +1,4 @@
+npm create vite
 npm install styled-components react-router-dom react-bootstrap bootstrap
+npm install react-icons react-hook-form react-leaflet
+
