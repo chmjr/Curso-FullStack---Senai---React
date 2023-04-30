@@ -27,11 +27,11 @@ export const SCBotaoCancel = styled(SCBotao)`
   background-color: red; //Só vai mudar esse atributo de diferente da classe herdada
 `;
 export const SCspanDados = styled.span`
-  color: ${(props) => (props.Clicado === 0 ? "red" : "")};
+  color: ${(props) => (props.Clicado ? "red" : "")};
 `;
 export const SCspanEnd = styled.span`
-  color: ${(props) => (props.Clicado === 1 ? "red" : "")};
+  color: ${(props) => (props.Clicado ? "red" : "")};
 `;
 export const SCspanAgrad = styled.span`
-  color: ${(props) => (props.Clicado === 2 ? "red" : "")};
+  color: ${(props) => (props.Clicado ? "red" : "")};
 `;

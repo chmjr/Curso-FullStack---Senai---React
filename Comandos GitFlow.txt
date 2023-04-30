@@ -1,0 +1,7 @@
+git flow init
+git flow feature start NOME DA FEATURE
+git flow feature finish NOME DA FEATURE
+git add
+git commit
+git flow release start VERSAO
+git flow release finish VERSAO

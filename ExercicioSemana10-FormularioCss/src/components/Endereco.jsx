@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ContextoPag } from "../App";
 
 function Endereco() {
+  const { menuClicado, setMenuClicado } = useContext(ContextoPag);
   return (
     <div>
       <div className="col-md-100 mb-100">
@@ -58,12 +61,20 @@ function Endereco() {
         <option value="TO">Tocantins</option>
       </select>
       <Link to="/dadosPessoais">
-        <button className="btn btn-light" type="button">
+        <button
+          className="btn btn-light"
+          type="button"
+          onClick={() => setMenuClicado(0)}
+        >
           Voltar
         </button>
       </Link>
-      <Link to="/agradecimento">
-        <button className="btn btn-light" type="button">
+      <Link to={{ pathname: "/agradecimento", state: { indice: 2 } }}>
+        <button
+          className="btn btn-light"
+          type="button"
+          onClick={() => setMenuClicado(2)}
+        >
           Cadastrar
         </button>
       </Link>
